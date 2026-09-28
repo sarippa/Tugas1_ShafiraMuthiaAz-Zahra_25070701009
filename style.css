@@ -1,0 +1,127 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;    
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background: #570210;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            min-height: 100vh;
+            padding: 30px 25px 40px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            background: #E1FDFE;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .bio {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 22px;
+            color: #570210;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link-button {
+            display: block;
+            width: 100%;
+            padding: 13px 15px;
+            background: #77080E;
+            color: #E1FDFE;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 13px;
+            transition: all 0.25s ease;
+        }
+
+        .link-button:hover {
+            background: #570210;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .connect-button {
+            margin-top: 10px;
+            background: #77080E;
+        }
+
+        .connect-button:hover {
+            background: #570210;
+        }
+
+        .section-title {
+            font-size: 21px;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 25px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 2px solid white;
+            background: black;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .quote {
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 14px;
+            font-size: 14px;
+            line-height: 2;
+            color: #570210;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: black;
+        }

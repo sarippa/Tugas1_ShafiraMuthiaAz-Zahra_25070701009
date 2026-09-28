@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenalan yuk! Page</title>
+
+    <style>
+        :root {
+            --bg-color: #570210;         
+            --card-bg: #E1FDFE;          
+            --text-color: black;       
+            --heading-color: #77080E;    
+            --main-title-color: #E1FDFE; 
+            --link-color: #E1FDFE;     
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .connect-container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .main-title {
+            color: var(--main-title-color);
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .card-box {
+            background-color: var(--card-bg);
+            padding: 30px 35px;
+            border-radius: 16px;
+            text-align: justify;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 25px;
+        }
+
+        .card-box h2 {
+            color: var(--heading-color);
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        .card-box h2:first-child {
+            margin-top: 0;
+        }
+
+        .card-box p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .skills-list span {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+
+        .sub-footer {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            color: #e1fdfd;
+        }
+
+        .back-link {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+.hover-connect-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-connect-wrapper:hover .social-links {
+    display: flex;
+    opacity: 1;
+}
+
+.social-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #77080E; 
+    color: #E1FDFE;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.social-btn:hover {
+    background-color: #570210;
+    transform: translateY(-2px);
+}
+    </style>
+</head>
+<body>
+
+    <div class="connect-container">
+        <h1 class="main-title">Kenalan yuk!</h1>
+
+        <div class="card-box">
+            <h2>About Me</h2>
+            <p>
+                Awoo awoo! Kenalin ku Shafira Muthia Az-Zahra (Sarippa). Mahasiswa jurusan Ilmu Komputer prodi Manajemen Informatika semester 3 di Universitas Lampung angkatan 2025.
+                Ku lahir di Bandar Lampung tanggal 13 Juni 2006.
+            </p>
+
+            <h2>Experience</h2>
+            <p>
+                Selama 3 semester berkuliah, ku belajar dan juga dapet banyak pengalaman baru. Ku jadi terbiasa ikut kegiatan di kampus, kayak belajar bareng, seminar, dan acara lainnya. Selain itu, ku juga belajar banyak hal baru di bidang teknologi dan manajemen.
+            </p>
+
+            <h2>Hobbies</h2>
+            <p>
+                Paling suka tidur. Bener bener secinta itu sama tidur. Suka main game juga, tapi khusus genre RPG. Kalo lagi ga mager, suka buat yogurt homemade tapi rasa strawberry. Suka curhat sama AI juga.
+            </p>
+
+            <h2>Skills</h2>
+            <p>
+                Punya skill leadership, problem solving, critical thinking, dan juga analytical thinking. Bisa bekerja dalam tim maupun individu. 
+            </p>
+        </div>
+
+        <div class="hover-connect-wrapper">
+            <p class="sub-footer" style="cursor: pointer;">
+                Udah si, itu aja tentang ku. Tapi kalo mau kenalan lebih lanjut, bisa klik tombol di bawah ini ya.
+            </p>
+
+            <div class="social-links">
+                <a href="https://wa.me/6283181813126" target="_blank" class="social-btn">WhatsApp</a>
+                <a href="mailto:2507071009@students.unila.ac.id" class="social-btn">Email</a>
+            </div>
+        </div>
+
+        <a href="javascript:history.back()" class="back-link">Kembali</a>
+    </div>
+
+</body>
+</html>
